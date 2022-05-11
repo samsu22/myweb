@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+	<head>
+		<title>Advance Editor</title>
+		<meta content="text/html" http-equiv="content-type" charset="utf-8" />
+	</head>
+	
+	<body dir="rtl">
+		
+		
+		<form id="form" action="exemple.php" method="post">
+		<div class="tolbar">
+			
+			
+			
+			<br />
+			<textarea name ="k"id="fdddd"></textarea>
+			<script type="text/javascript" src="editor-min.js"></script>
+			<script type="text/javascript">
+				
+				Editor.setStyle({
+					"bgColor": "#FFD5B3",
+					"borderColor": "#c8c8c8",
+					"fontFamily": "tahoma"
+				});
+				
+				Editor.run({
+					"replace": "fdddd",  // ????? ???? ??? textarea
+					"height": 120,   // ??? ??????
+					"width": 540, // ??? ??????
+					"path": '',
+					"mode": "advance"
+				});
+				
+			</script>
+			
+			<br />
+		
+			
+		</div>
+		<br />
+		<input value='exemple' id='ok' type='submit' />
+		</form>
+		
+	</body>
+	
+</html>
